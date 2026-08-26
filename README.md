@@ -1,6 +1,6 @@
-# Video Conferencing App
+# SyncMeet
 
-A full-stack video conferencing web application (Zoom-style), built with React on the frontend and Node.js/Express + Socket.IO on the backend, with MongoDB for data storage.
+A full-stack video conferencing web application, built with React on the frontend and Node.js/Express + Socket.IO on the backend, with MongoDB for data storage.
 
 ## Features
 
@@ -42,7 +42,7 @@ A full-stack video conferencing web application (Zoom-style), built with React o
 
 ```bash
 git clone <your-repo-url>
-cd <your-repo-name>
+cd syncmeet
 ```
 
 ### 2. Backend setup
