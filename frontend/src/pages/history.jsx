@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { AuthContext } from '../contexts/AuthContext'
 import { useNavigate } from 'react-router-dom';
+import withAuth from '../utils/withAuth';
 import Card from '@mui/material/Card';
 import Box from '@mui/material/Box';
 import CardActions from '@mui/material/CardActions';
@@ -10,7 +11,7 @@ import Typography from '@mui/material/Typography';
 import HomeIcon from '@mui/icons-material/Home';
 
 import { IconButton } from '@mui/material';
-export default function History() {
+ function History() {
 
 
     const { getHistoryOfUser } = useContext(AuthContext);
@@ -86,3 +87,4 @@ export default function History() {
         </div>
     )
 }
+export default withAuth(History);
